@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SetView.swift
 //  NotifyBattery WatchKit Extension
 //
 //  Created by 村尾慶伸 on 2020/10/04.
@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SetView: View {
+
     var body: some View {
+
         Text("Hello, World!")
-            .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SetView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SetView()
     }
 }

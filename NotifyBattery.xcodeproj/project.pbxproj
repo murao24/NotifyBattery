@@ -17,6 +17,7 @@
 		04B3B5A62529655300100AEA /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3B5A52529655300100AEA /* ComplicationController.swift */; };
 		04B3B5A82529655400100AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B3B5A72529655400100AEA /* Assets.xcassets */; };
 		04B3B5AB2529655400100AEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B3B5AA2529655400100AEA /* Preview Assets.xcassets */; };
+		04B3B5C3252990A200100AEA /* SetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3B5C2252990A200100AEA /* SetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		04B3B5AA2529655400100AEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04B3B5AC2529655400100AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B3B5AD2529655400100AEA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		04B3B5C2252990A200100AEA /* SetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				04B3B59D2529655300100AEA /* NotifyBatteryApp.swift */,
-				04B3B59F2529655300100AEA /* ContentView.swift */,
+				04B3B5BE2529909600100AEA /* Views */,
 				04B3B5A12529655300100AEA /* NotificationController.swift */,
 				04B3B5A32529655300100AEA /* NotificationView.swift */,
 				04B3B5A52529655300100AEA /* ComplicationController.swift */,
@@ -139,6 +141,15 @@
 				04B3B5AA2529655400100AEA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04B3B5BE2529909600100AEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04B3B59F2529655300100AEA /* ContentView.swift */,
+				04B3B5C2252990A200100AEA /* SetView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B3B5A22529655300100AEA /* NotificationController.swift in Sources */,
+				04B3B5C3252990A200100AEA /* SetView.swift in Sources */,
 				04B3B5A02529655300100AEA /* ContentView.swift in Sources */,
 				04B3B5A62529655300100AEA /* ComplicationController.swift in Sources */,
 				04B3B59E2529655300100AEA /* NotifyBatteryApp.swift in Sources */,

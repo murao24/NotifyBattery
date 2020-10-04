@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct NotifyBatteryApp: App {
+
     @SceneBuilder var body: some Scene {
+
         WindowGroup {
+
             NavigationView {
+
                 ContentView()
             }
         }
