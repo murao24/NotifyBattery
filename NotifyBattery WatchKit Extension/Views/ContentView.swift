@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
 
+    init() {
+
+        WKInterfaceDevice.current().isBatteryMonitoringEnabled = true
+    }
+
     var body: some View {
 
         NavigationView {
@@ -21,6 +26,15 @@ struct ContentView: View {
                 Text("92%")
                     .font(.title)
                     .foregroundColor(.orange)
+
+                Button(action: {
+
+                    let level = WKInterfaceDevice.current().batteryLevel
+                    print(level)
+                }, label: {
+
+                    Text("Update")
+                })
 
                 NavigationLink(
                     destination: SetView(),
