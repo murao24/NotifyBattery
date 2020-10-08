@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
 
+    @ObservedObject var vm = ViewModel()
+
     init() {
 
         WKInterfaceDevice.current().isBatteryMonitoringEnabled = true
+        vm.level = WKInterfaceDevice.current().batteryLevel * 100
+        print(vm.level)
     }
 
     var body: some View {
@@ -23,14 +27,13 @@ struct ContentView: View {
                 Text("iPhone")
 
                 // If in charge, change text color.
-                Text("92%")
+                Text("\(vm.level)%")
                     .font(.title)
                     .foregroundColor(.orange)
 
                 Button(action: {
 
-                    let level = WKInterfaceDevice.current().batteryLevel
-                    print(level)
+                    vm.level = round(WKInterfaceDevice.current().batteryLevel * 100)
                 }, label: {
 
                     Text("Update")
