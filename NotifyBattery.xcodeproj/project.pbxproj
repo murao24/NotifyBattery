@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046FFCCF252E978F00A36DBB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046FFCCE252E978F00A36DBB /* ViewModel.swift */; };
 		04B3B58D2529655200100AEA /* NotifyBattery WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 04B3B58C2529655200100AEA /* NotifyBattery WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04B3B5922529655300100AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B3B5912529655300100AEA /* Assets.xcassets */; };
 		04B3B5992529655300100AEA /* NotifyBattery WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04B3B5982529655300100AEA /* NotifyBattery WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		046FFCCE252E978F00A36DBB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		04B3B5882529655200100AEA /* NotifyBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B3B58C2529655200100AEA /* NotifyBattery WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotifyBattery WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B3B5912529655300100AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046FFCD3252E979200A36DBB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				046FFCCE252E978F00A36DBB /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		04B3B5812529655200100AEA = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 			children = (
 				04B3B59D2529655300100AEA /* NotifyBatteryApp.swift */,
 				04B3B5BE2529909600100AEA /* Views */,
+				046FFCD3252E979200A36DBB /* ViewModels */,
 				04B3B5A12529655300100AEA /* NotificationController.swift */,
 				04B3B5A32529655300100AEA /* NotificationView.swift */,
 				04B3B5A52529655300100AEA /* ComplicationController.swift */,
@@ -284,6 +295,7 @@
 				04B3B5A62529655300100AEA /* ComplicationController.swift in Sources */,
 				04B3B59E2529655300100AEA /* NotifyBatteryApp.swift in Sources */,
 				04B3B5A42529655300100AEA /* NotificationView.swift in Sources */,
+				046FFCCF252E978F00A36DBB /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
